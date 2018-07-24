@@ -1,0 +1,7 @@
+{
+  "name": "ressource-loader",
+  "version": "1.0.0",
+  "description": "Load scripts and stylesheets with JavaScript.",
+  "main": "ressource-loader.js",
+  "author": "Tobias Hennig <tobias.hennig1@gmail.com>"
+}
