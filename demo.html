@@ -14,26 +14,26 @@
       <p class="subtitle">
         My first website with <strong>Bulma</strong>!
       </p>
-      <button id="load-ressources-btn" class="button">
+      <button id="load-resources-btn" class="button">
         <span class="icon"><i class="fas fa-arrow-circle-down"></i></span>
-        <span>Load ressources</span>
+        <span>Load resources</span>
       </button>
     </div>
   </section>
   <script type="module">
-    import {loadScript, loadStylesheet} from "./load-ressources.js";
+    import {loadResource, loadResources} from "./load-resource.js";
 
-    function loadRessources() {
-      return Promise.all([
-        loadScript("https://use.fontawesome.com/releases/v5.1.0/js/all.js"),
-        loadStylesheet("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css")
-      ])
-        .then(() => console.log("Ressources loaded"))
+    const button = document.getElementById("load-resources-btn");
+    button.addEventListener("click", () => {
+      return loadResources([
+          "https://use.fontawesome.com/releases/v5.1.0/js/all.js",
+          "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"
+        ])
+        .then(loadResource())
+        .then(loadResource("https://use.fontawesome.com/releases/v5.1.0/js/all.json"))
+        .then(() => console.log("resources loaded"))
         .catch(e => console.error(e));
-    }
-
-    const button = document.getElementById("load-ressources-btn");
-    button.addEventListener("click", loadRessources);
+    });
   </script>
   </body>
 </html>

@@ -1,11 +1,11 @@
 {
-  "name": "load-ressources",
-  "version": "1.1.2",
+  "name": "load-resource",
+  "version": "2.0.0",
   "description": "Load scripts and stylesheets with JavaScript.",
-  "main": "load-ressources.js",
+  "main": "load-resource.js",
   "author": "Tobias Hennig <tobias.hennig1@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TobiasHennig/load-ressources.git"
+    "url": "https://github.com/TobiasHennig/load-resource.git"
   }
 }
