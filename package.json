@@ -1,6 +1,6 @@
 {
   "name": "load-ressources",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Load scripts and stylesheets with JavaScript.",
   "main": "load-ressources.js",
   "author": "Tobias Hennig <tobias.hennig1@gmail.com>",
