@@ -16,6 +16,10 @@ export function loadScript(url) {
   });
 }
 
+export function loadScripts(urls) {
+  return Promise.all(urls.map(loadScript));
+}
+
 export function loadStylesheet(url) {
   if (url === undefined) {
     return Promise.reject(Error("Missing \"url\" parameter, invoke \"loadStylesheet\" with an url."));
@@ -31,4 +35,8 @@ export function loadStylesheet(url) {
     stylesheet.addEventListener("error", () => reject(Error(`Unable to load stylesheet "${url}".`)), false);
     document.body.appendChild(stylesheet);
   });
+}
+
+export function loadStylesheets(urls) {
+  return Promise.all(urls.map(loadStylesheet));
 }
