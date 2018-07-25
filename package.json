@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "description": "Load scripts and stylesheets with JavaScript.",
   "main": "load-ressources.js",
-  "author": "Tobias Hennig <tobias.hennig1@gmail.com>"
+  "author": "Tobias Hennig <tobias.hennig1@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TobiasHennig/load-ressources.git"
+  }
 }
